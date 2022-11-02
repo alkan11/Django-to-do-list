@@ -1,0 +1,6 @@
+<a href="{%url 'home'%}">Go back</a>
+<form method='POST'>
+    {%csrf_token%}
+    <p>Bu görevi silmek istediğinden emin misin?{{task}}</p>
+    <input type='submit' value='Delete'/>
+</form>
